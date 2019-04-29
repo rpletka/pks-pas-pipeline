@@ -5,7 +5,7 @@ function upload_stemcells() (
   set -eu
   local stemcell_os=$1
   local stemcell_versions="$2"
-
+  local stemcell_version_reqd="170.48"
   for stemcell_version_reqd in $stemcell_versions
   do
 
