@@ -177,7 +177,7 @@ resources:
 - name: nsx-t-ci-pipeline
   type: git
   source:
-    uri: https://github.com/NiranEC77/pks-pas-pipeline.git
+    uri: https://github.com/rpletka/pks-pas-pipeline.git
     branch: master
 
 - name: pcf-ops-manager

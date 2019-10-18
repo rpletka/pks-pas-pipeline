@@ -496,7 +496,7 @@ pks_main_properties=$(
     --arg pks_cli_password "$PKS_CLI_PASSWORD" \
     --arg pks_cli_email "$PKS_CLI_EMAIL" \
     --arg cert_pem "$PKS_SSL_CERT" \
-    --arg private_key_pem "$PKS_SSL_PRIVATE_KEY" \
+    --arg private_key_pem "$PKS_PRIVATE_KEY" \
     --argjson plan_props "$plan_props" \
     '
     .
@@ -517,6 +517,12 @@ pks_main_properties=$(
       },
       ".properties.uaa_pks_cli_refresh_token_lifetime": {
           "value": "172800"
+      },
+      ".properties.telemetry_installation_purpose_selector": {
+          "value": "demo_or_poc"
+      }
+      ".properties.oidc_selector": {
+          "value": "disabled"
       }
     }
     '
